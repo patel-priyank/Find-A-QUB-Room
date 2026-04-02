@@ -1,3 +1,5 @@
+import './setup.js';
+
 import { createRoot } from 'react-dom/client';
 import { cloneElement, forwardRef, StrictMode } from 'react';
 
