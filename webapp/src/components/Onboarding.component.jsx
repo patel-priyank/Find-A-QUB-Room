@@ -43,7 +43,7 @@ const Onboarding = ({ open, onClose }) => {
     {
       content: (
         <Box className="onboarding-intro">
-          <img src="../../favicon.png" width={100} />
+          <img src="/favicon.png" width={100} />
 
           <Typography variant="h6" color="text.primary">
             Find a QUB Room
@@ -71,7 +71,7 @@ const Onboarding = ({ open, onClose }) => {
           <Typography>
             Use the bottom navigation bar to switch between pages - Map, Search, Events, and Account.
           </Typography>
-          <video src="../../src/assets/onboarding/page-navigation.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/page-navigation.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -81,7 +81,7 @@ const Onboarding = ({ open, onClose }) => {
           <Typography>
             On the Map page, use the legend, filters, and map view switch. You can also fly to your current location.
           </Typography>
-          <video src="../../src/assets/onboarding/map-controls.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/map-controls.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -92,7 +92,7 @@ const Onboarding = ({ open, onClose }) => {
             Select any marker and choose Plot Route to see a walking route with distance and time. Or use Navigate to
             open Google Maps.
           </Typography>
-          <video src="../../src/assets/onboarding/routing.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/routing.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -103,7 +103,7 @@ const Onboarding = ({ open, onClose }) => {
             On the Search page, type a location name or building. You can filter by type, view details, or locate it on
             the Map.
           </Typography>
-          <video src="../../src/assets/onboarding/search.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/search.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -114,7 +114,7 @@ const Onboarding = ({ open, onClose }) => {
             View location details, including opening days and images. You can save/unsave the location, see events, or
             leave feedback.
           </Typography>
-          <video src="../../src/assets/onboarding/location-details.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/location-details.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -124,7 +124,7 @@ const Onboarding = ({ open, onClose }) => {
           <Typography>
             Discover upcoming events. You can search by event name or description, and filter by date or location.
           </Typography>
-          <video src="../../src/assets/onboarding/events.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/events.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -134,7 +134,7 @@ const Onboarding = ({ open, onClose }) => {
           <Typography>
             In your Account, you can view your saved locations and access room booking through Queen's Online.
           </Typography>
-          <video src="../../src/assets/onboarding/account.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/account.mp4" {...VIDEO_PROPS} />
         </>
       )
     },
@@ -145,7 +145,7 @@ const Onboarding = ({ open, onClose }) => {
             You can revisit this onboarding anytime from your Account page. Enjoy exploring Queen's University with Find
             a QUB Room!
           </Typography>
-          <video src="../../src/assets/onboarding/onboarding.mp4" {...VIDEO_PROPS} />
+          <video src="/onboarding/onboarding.mp4" {...VIDEO_PROPS} />
         </>
       )
     }

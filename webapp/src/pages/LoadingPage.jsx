@@ -12,7 +12,7 @@ const LoadingPage = () => {
       </AppBar>
 
       <Box className="app-loader">
-        <img src="../../favicon.png" width={100} />
+        <img src="/favicon.png" width={100} />
 
         <Typography variant="h6" color="text.primary">
           Find a QUB Room
