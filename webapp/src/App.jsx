@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
 
+import { Analytics } from '@vercel/analytics/react';
 import { jwtDecode } from 'jwt-decode';
 
 import LoadingPage from './pages/LoadingPage';
@@ -70,25 +71,29 @@ const App = () => {
   return appLoading ? (
     <LoadingPage />
   ) : (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MapPage />} />
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/account" element={<AccountPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+    <>
+      <Analytics />
 
-      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MapPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
 
-      <Onboarding
-        open={onboardingDialogOpen}
-        onClose={() => {
-          setOnboardingDialogOpen(false);
-          localStorage.setItem('onboardingShown', 'true');
-        }}
-      />
-    </BrowserRouter>
+        <Navbar />
+
+        <Onboarding
+          open={onboardingDialogOpen}
+          onClose={() => {
+            setOnboardingDialogOpen(false);
+            localStorage.setItem('onboardingShown', 'true');
+          }}
+        />
+      </BrowserRouter>
+    </>
   );
 };
 
